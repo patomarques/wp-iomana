@@ -1,0 +1,16 @@
+#top-nav, #acess {
+    display: none !important;
+}
+ 
+#site-title {
+    span {
+        a {
+            text-decoration: underline;
+            font-family: $ff-goldplay;
+
+            &:before {
+                width: 0;
+            }
+        }
+    }
+}

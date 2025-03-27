@@ -29,6 +29,7 @@ function ripley_child_styling()
 
 	wp_enqueue_script('slick-js', get_stylesheet_directory_uri() . '/node_modules/slick-carousel/slick/slick.min.js', array(), '1.0.0', true);
 	wp_enqueue_script('theme-script', get_stylesheet_directory_uri() . '/assets/js/wp-laroye.js', array(), '1.0.0', true);
+	wp_enqueue_script('bootstrap-script', get_stylesheet_directory_uri() . '/node_modules/dist/js/bootstrap.min.js', array(), '', true);
 }
 add_action( 'wp_enqueue_scripts', 'ripley_child_styling' );
 /**

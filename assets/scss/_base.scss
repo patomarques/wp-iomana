@@ -12,7 +12,11 @@ html {
 
 a {
     color: $c-blue;
-    text-decoration: none;
+    text-decoration: none !important;
+
+    &:hover {
+        opacity: .7;
+    }
 }
 
 p {
@@ -161,4 +165,31 @@ p {
     .card__title {
         min-height: 60px;
     }
+}
+
+.content-box {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    .box-icon-rounded {
+        padding: 30px;
+        font-size: 2rem;
+
+        i {
+
+        }
+    }
+}
+
+#mobile-menu .side-section {
+    margin: 0;
+}
+
+body.admin-bar nav#mobile-menu {
+    padding-top: 0;
+}
+
+body.admin-bar #mobile-menu .menu-main-search {
+    padding-top: 0;
 }

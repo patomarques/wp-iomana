@@ -19,7 +19,7 @@
 	cryout_header_hook();
 	wp_head();
 ?>
-<link rel="stylesheet" type="text/css" href="<?= get_site_urL() ?>/wp-content/themes/ripley/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" type="text/css" href="<?= get_site_urL() ?>/wp-content/themes/ripley/node_modules/bootstrap/dist/css/bootstrap.min.css" /> -->
 </head>
 
 <body <?php body_class(); cryout_schema_microdata( 'body' );?>>

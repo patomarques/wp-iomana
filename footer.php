@@ -37,7 +37,7 @@
 		</div>
 		<div id="footer-bottom">
 			<div class="footer-inside">
-				<p class="h6">Desenvolvido por <a class="link" href="https://www.patomarques.com.br">Pato Marques</a></p>
+				<p class="h6">Desenvolvido por <a class="link" href="https://www.patomarques.com.br" target="_blank">Pato Marques</a></p>
 			</div>
 		</div>
 	</footer>

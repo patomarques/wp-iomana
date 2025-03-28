@@ -11965,6 +11965,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
 .bg-beige {
   background-color: #fffbed;
 }
@@ -11983,6 +11991,10 @@ textarea.form-control-lg {
 
 .bg-blue {
   background-color: #c5e7e4;
+}
+
+.color-black {
+  color: #000000;
 }
 
 @font-face {

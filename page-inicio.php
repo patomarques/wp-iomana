@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <div class="container-fluid bg-red">
-    <?php echo do_shortcode('[smartslider3 slider="2"]')?>
+    <?php
+    echo do_shortcode('[smartslider3 slider="2"]');
+    ?>
 </div>
 
 <section class="container-fluid bg-yellow pt-5 pb-5">
@@ -31,6 +33,7 @@ $objects = new WP_Query(
     )
 );
 ?>
+
 <section class="container-fluid bg-red pt-5 pb-5">
     <div class="container">
         <div class="row">
@@ -50,8 +53,13 @@ $objects = new WP_Query(
                 $objects->the_post(); ?>
 
                 <div class="col">
-                    <img src="<?= get_the_post_thumbnail_url(get_the_ID()) ?>" 
-                    title="<?php echo get_the_title(); ?>" alt="<?php echo get_the_title(); ?>" class="img-responsive">
+                    <div class="slick-js">
+                        <div>
+                            <img src="<?= get_the_post_thumbnail_url(get_the_ID()) ?>"
+                                title="<?php echo get_the_title(); ?>" alt="<?php echo get_the_title(); ?>" class="img-responsive">
+
+                        </div>
+                    </div>
 
                 </div>
             <?php endwhile; ?>
@@ -68,19 +76,37 @@ $objects = new WP_Query(
     </div>
 </section>
 
+<?php
+$peoples = new WP_Query(
+    array(
+        'post_type' => 'pessoas',
+        'orderby' => 'publish',
+        'order' => 'DESC',
+    )
+);
+?>
+
 <section class="container-fluid bg-blue pt-5 pb-5">
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row">
-            <p>Aqui um caroussel com imagens dos artistas</p>
+            <?php while ($peoples->have_posts()):
+                $peoples->the_post(); ?>
+
+                <div class="col slick-js-persons">
+                    <img src="<?= get_the_post_thumbnail_url(get_the_ID()) ?>"
+                        title="<?php echo get_the_title(); ?>" alt="<?php echo get_the_title(); ?>" class="img-responsive">
+
+                </div>
+            <?php endwhile; ?>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-12 col-sm-6">
                 <h2 class="title-section">Pessoas</h2>
             </div>
             <div class="col-12 col-sm-6 text-right">
-                <a href="#">>>> Saiba mais.</a>
+                <a href="#" class="color-black">>>> Saiba mais.</a>
             </div>
         </div>
     </div>
@@ -102,3 +128,5 @@ $objects = new WP_Query(
         </div>
     </div>
 </section>
+
+<?php get_footer(); ?>

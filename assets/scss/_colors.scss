@@ -24,7 +24,7 @@ $color-blue: #c5e7e4;
 }
 
 .bg-beige {
-    background-color: $color-beige;
+    background-color: $color-beige !important;
 }
 
 .bg-green {
@@ -44,5 +44,5 @@ $color-blue: #c5e7e4;
 }
 
 .color-black {
-    color: $color-black;
-}
+    color: $color-black !important;
+} 

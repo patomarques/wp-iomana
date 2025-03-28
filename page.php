@@ -12,10 +12,7 @@
 
 get_header(); ?>
 
-<div class="container-fluid bg-red">
-		teste
-	</div>
-	
+
 	<div id="container" class="<?php bravada_get_layout_class(); ?>">
 
 	

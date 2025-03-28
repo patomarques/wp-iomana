@@ -24,8 +24,8 @@ function ripley_child_styling()
 	wp_enqueue_style('bravada-main', get_template_directory_uri() . '/style.css');
 	wp_enqueue_style('ripley', get_stylesheet_directory_uri() . '/style.css', array('bravada-main'), _CRYOUT_THEME_VERSION);
 	wp_enqueue_style('slick-css', get_stylesheet_directory_uri() . '/node_modules/slick-carousel/slick/slick.css');
-	wp_enqueue_style('ripley-custom-css', get_stylesheet_directory_uri() . '/assets/scss/wp_laroye.css');
 	wp_enqueue_style('slick-theme-css', get_stylesheet_directory_uri() . '/node_modules/slick-carousel/slick/slick-theme.css');
+	wp_enqueue_style('ripley-custom-css', get_stylesheet_directory_uri() . '/assets/scss/wp_laroye.css');
 
 	wp_enqueue_script('jquery-js', get_stylesheet_directory_uri() . '/node_modules/jquery/dist/jquery.min.js', array(), '1.0.0', true);
 	wp_enqueue_script('slick-js', get_stylesheet_directory_uri() . '/node_modules/slick-carousel/slick/slick.min.js', array(), '1.0.0', true);

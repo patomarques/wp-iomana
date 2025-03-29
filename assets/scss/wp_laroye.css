@@ -12224,6 +12224,35 @@ body.admin-bar #mobile-menu .menu-main-search {
   display: none !important;
 }
 
+.slick-slider .fa-solid {
+  top: 35%;
+  position: absolute;
+  z-index: 9;
+  transition: 0.3s;
+}
+.slick-slider .fa-solid:hover {
+  cursor: pointer;
+  color: #eae3c5;
+  opacity: 0.9;
+}
+.slick-slider .fa-chevron-left {
+  left: -80px;
+}
+.slick-slider .fa-chevron-right {
+  right: -80px;
+}
+
+.slick-people .fa-solid {
+  top: 45%;
+  color: #fffbed;
+}
+.slick-people .fa-chevron-left {
+  left: 20px;
+}
+.slick-people .fa-chevron-right {
+  right: 20px;
+}
+
 #site-copyright, .footer-inside {
   color: #000000;
 }

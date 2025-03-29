@@ -264,3 +264,41 @@ body.admin-bar #mobile-menu .menu-main-search {
 .toTop-show {
   display: none !important;
 }
+
+.slick-slider {
+  .fa-solid {
+    top: 35%;
+    position: absolute;
+    z-index: 9;
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-yellow;
+      opacity: 0.9;
+    }
+  }
+
+  .fa-chevron-left {
+    left: -80px;
+  }
+
+  .fa-chevron-right {
+    right: -80px;
+  }
+}
+
+.slick-people {
+  .fa-solid {
+    top: 45%;
+    color: $color-beige;
+  }
+
+  .fa-chevron-left {
+    left: 20px;
+  }
+
+  .fa-chevron-right {
+    right: 20px;
+  }
+}

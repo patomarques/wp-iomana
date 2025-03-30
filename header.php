@@ -22,7 +22,6 @@
 	cryout_header_hook();
 	wp_head();
 	?>
-	<!-- <link rel="stylesheet" type="text/css" href="<?= get_site_urL() ?>/wp-content/themes/ripley/node_modules/bootstrap/dist/css/bootstrap.min.css" /> -->
 </head>
 
 <body <?php body_class();
@@ -60,34 +59,19 @@
 
 						<div class="site-header-inside">
 
-							<div class="container">
-								<div class="row">
-									<div class="col-12 col-md-4">
-										<div id="branding">
-											<?php cryout_branding_hook(); ?>
-										</div><!-- #branding -->
+							<div id="branding">
+								<?php cryout_branding_hook(); ?>
+							</div><!-- #branding -->
 
-									</div>
-									<div class="col-12 col-md-8">
-										<?php if (bravada_check_empty_menu('primary') && (has_nav_menu('primary') || (true == cryout_get_option('theme_pagesmenu')))) { ?>
-											<div class='menu-burger '>
-												<button class='hamburger' type='button' aria-label="<?php esc_attr_e('Main menu', 'bravada') ?>">
-													<span></span>
-													<span></span>
-													<span></span>
-												</button>
-											</div>
-
-											<?php //wp_nav_menu(array('menu' => 'menu_main')); ?>
-
-										<?php } ?>
-
-
-
-									</div>
+							<?php if (bravada_check_empty_menu('primary') && (has_nav_menu('primary') || (true == cryout_get_option('theme_pagesmenu')))) { ?>
+								<div class='menu-burger d-block d-xl-none'>
+									<button class='hamburger' type='button' aria-label="<?php esc_attr_e('Main menu', 'bravada') ?>">
+										<span></span>
+										<span></span>
+										<span></span>
+									</button>
 								</div>
-							</div>
-
+							<?php } ?>
 
 							<?php if (bravada_check_empty_menu('top') && (has_nav_menu('top') || (true == cryout_get_option('theme_pagesmenu')))) { ?>
 								<nav id="<?php echo apply_filters('bravada_navigation_compat', 'access') ?>" aria-label="<?php esc_attr_e('Top Menu', 'bravada') ?>" <?php cryout_schema_microdata('menu'); ?>>

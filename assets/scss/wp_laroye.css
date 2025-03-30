@@ -12018,9 +12018,24 @@ textarea.form-control-lg {
   opacity: 0.7;
 }
 
-#top-nav,
-#acess {
-  display: none !important;
+#top-nav {
+  margin: 0;
+  padding: 0;
+}
+#top-nav li a {
+  color: #000000 !important;
+  font-weight: 900 !important;
+  font-size: 1.1em !important;
+  text-transform: uppercase;
+  padding: 0 24px;
+}
+#top-nav .sub-menu li a {
+  background-color: #ffffff !important;
+}
+
+#access {
+  padding-right: 0;
+  float: right !important;
 }
 
 #site-title span a {
@@ -12034,6 +12049,14 @@ textarea.form-control-lg {
 @media (min-width: 576px) {
   #site-title a {
     font-size: 0.8em !important;
+  }
+  #top-nav {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #top-nav {
+    display: block;
   }
 }
 body {

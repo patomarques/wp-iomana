@@ -73,7 +73,7 @@ $objects = new WP_Query(
             </div>
             <div class="col-12 col-sm-6">
                 <div class="pull-right">
-                    <a href="<?= get_site_url() . '/objetos' ?>" class="h4">>>> Saiba mais.</a>
+                    <a href="<?= get_site_url() . '/objetos' ?>" class="h4 mt-3">>>> Saiba mais.</a>
                 </div>
             </div>
         </div>

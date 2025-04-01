@@ -18,7 +18,7 @@ $videos = new WP_Query($args);
                     }
                 ?>
 
-                <div class="col-12 col-sm-6 col-xl-4 mb-2">
+                <div class="col-12 col-sm-6 col-xl-6 mb-2">
                     <div class="card m-2">
                         <div class="card__content">
                             <h4 class="card__title text-center mt-3"><?php echo get_the_title(); ?></h4>
@@ -33,12 +33,12 @@ $videos = new WP_Query($args);
 </div>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
-</button>
+</button> -->
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -54,16 +54,4 @@ $videos = new WP_Query($args);
       </div>
     </div>
   </div>
-</div>
-
-
-<div class="row m-5">
-    <div class="col-12 text-center">
-        <a href="https://instagram.com" class="contact-link m-5" title="@doinstagram" alt="@doinstagram">
-            <i class="fa-brands fa-instagram fa-4x"></i>
-        </a>
-        <a href="alert('dispara um email, se quiser)" class="contact-link m-5" title="@doinstagram" alt="to:email@praenviar.com">
-            <i class="fa-solid fa-at fa-4x"></i>
-        </a>
-    </div>
-</div>
+</div> -->

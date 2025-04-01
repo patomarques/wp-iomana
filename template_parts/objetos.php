@@ -8,6 +8,13 @@ $args = array(
 $objetos = new WP_Query($args);
 ?>
 
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="title-page display-1 pt-5 pb-5 mb-3">Objetos</h2>
+        </div>
+    </div>
+</div>
 <div class="container page-objetos">
     <div class="row">
         <div class="square-container">
